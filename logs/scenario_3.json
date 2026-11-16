@@ -1,0 +1,28 @@
+[
+  {
+    "scenario_id": "scenario_3",
+    "question": "מה הציון הממוצע שלך בתואר?",
+    "status": "approved",
+    "final_text": "אין לי מידע על הממוצע שלי בתואר, כי הוא לא מופיע במקורות שעומדים לרשותי. אני יכול לספר שאני לומד לתואר **BSc במדעי המחשב** ב-Reichman University (LinkedIn). לשאלות על ציונים אפשר לפנות אליי ישירות דרך LinkedIn.",
+    "attempts": [
+      {
+        "attempt": 1,
+        "source": "actor",
+        "candidate": "אין לי מידע על הממוצע שלי בתואר, כי הוא לא מופיע במקורות שעומדים לרשותי. אני יכול לספר שאני לומד לתואר **BSc במדעי המחשב** ב-Reichman University (LinkedIn). לשאלות על ציונים אפשר לפנות אליי ישירות דרך LinkedIn.",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": true,
+          "feedback": "The answer correctly states that the GPA is not in the sources and does not guess. The added fact, a BSc in Computer Science at Reichman University, is supported and attributed to LinkedIn. It is in Hebrew, first person and brief."
+        },
+        "error": null,
+        "raw_output": null
+      }
+    ],
+    "actor_model": "claude-opus-5-5",
+    "actor_effort": "low",
+    "critic_model": "claude-opus-5-5",
+    "critic_effort": "medium",
+    "critic_kind": "llm",
+    "timestamp": "2026-11-15T15:56:48+02:00"
+  }
+]

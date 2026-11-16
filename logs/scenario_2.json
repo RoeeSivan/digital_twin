@@ -1,0 +1,54 @@
+[
+  {
+    "scenario_id": "scenario_2",
+    "question": "מה הפרויקט המרכזי שלך?",
+    "status": "approved",
+    "final_text": "הפרויקט המרכזי שלי הוא **UniRate** (uni-rate.com), פלטפורמה לדירוג קורסים לסטודנטים ברייכמן (סיכום אישי). בניתי אותה עם Next.js, TypeScript, Prisma ו-PostgreSQL, וכללתי בה צ'אט AI (LinkedIn). הפיתוח היה מקצה לקצה: אימות משתמשים, אימות דרך LinkedIn, התראות במייל, ניהול תוכן, ממשק דו-לשוני וסיכומי ביקורות מבוססי AI באנגלית ובעברית (LinkedIn). לגבי מספר המשתמשים, בפרופיל ה-LinkedIn מופיע 150+ (LinkedIn), ובסיכום האישי מופיע יותר מ-200 (סיכום אישי).",
+    "attempts": [
+      {
+        "attempt": 1,
+        "source": "actor",
+        "candidate": "הפרויקט המרכזי שלי הוא **UniRate** (uni-rate.com), פלטפורמה לדירוג קורסים לסטודנטים ברייכמן (סיכום אישי). בניתי אותה עם Next.js, TypeScript, Prisma ו-PostgreSQL, וכללתי בה צ'אט AI (LinkedIn). הפיתוח היה מקצה לקצה: אימות משתמשים, אימות דרך LinkedIn, התראות במייל, ניהול תוכן, ממשק דו-לשוני וסיכומי ביקורות מבוססי AI באנגלית ובעברית (LinkedIn). לגבי מספר המשתמשים, בפרופיל ה-LinkedIn מופיע 150+ (LinkedIn), ובסיכום האישי מופיע יותר מ-200 (סיכום אישי).",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": true,
+          "feedback": "Every claim is supported by the sources: UniRate as the main project, its tech stack, the AI chat, the end-to-end features and the bilingual AI summaries. The answer also shows both user counts (150+ on LinkedIn, more than 200 in the personal summary) rather than hiding the conflict. It is in Hebrew, first person, concise, and names the source of each central fact."
+        },
+        "error": null,
+        "raw_output": null
+      }
+    ],
+    "actor_model": "claude-opus-5-5",
+    "actor_effort": "low",
+    "critic_model": "claude-opus-5-5",
+    "critic_effort": "medium",
+    "critic_kind": "llm",
+    "timestamp": "2026-11-15T15:56:35+02:00"
+  },
+  {
+    "scenario_id": "scenario_2",
+    "question": "ובאיזה טכנולוגיות הוא בנוי?",
+    "status": "approved",
+    "final_text": "UniRate בנוי עם **Next.js** ו-**TypeScript**, ולשכבת הנתונים אני משתמש ב-**Prisma** וב-**PostgreSQL** (LinkedIn, סיכום אישי). בנוסף שילבתי בו צ'אט AI חי (LinkedIn) וסיכומי ביקורות מבוססי AI באנגלית ובעברית (LinkedIn). במקורות שלי לא מפורט איזה מודל או שירות AI אני משתמש בו, וגם לא איפה האתר מתארח.",
+    "attempts": [
+      {
+        "attempt": 1,
+        "source": "actor",
+        "candidate": "UniRate בנוי עם **Next.js** ו-**TypeScript**, ולשכבת הנתונים אני משתמש ב-**Prisma** וב-**PostgreSQL** (LinkedIn, סיכום אישי). בנוסף שילבתי בו צ'אט AI חי (LinkedIn) וסיכומי ביקורות מבוססי AI באנגלית ובעברית (LinkedIn). במקורות שלי לא מפורט איזה מודל או שירות AI אני משתמש בו, וגם לא איפה האתר מתארח.",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": true,
+          "feedback": "The answer correctly resolves 'it' to UniRate. It lists Next.js, TypeScript, Prisma and PostgreSQL, the live AI chat and the bilingual AI review summaries, all of which the sources support and cite. It also states clearly that the AI model and the hosting are not specified. The answer is brief, in first-person Hebrew, and uses no headings."
+        },
+        "error": null,
+        "raw_output": null
+      }
+    ],
+    "actor_model": "claude-opus-5-5",
+    "actor_effort": "low",
+    "critic_model": "claude-opus-5-5",
+    "critic_effort": "medium",
+    "critic_kind": "llm",
+    "timestamp": "2026-11-15T15:56:41+02:00"
+  }
+]

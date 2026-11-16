@@ -1,0 +1,40 @@
+[
+  {
+    "scenario_id": "scenario_4",
+    "question": "ספר לי על הניסיון התעסוקתי שלך",
+    "status": "approved",
+    "final_text": "העבודה האחרונה שלי הייתה ב-**Agora**, בתפקיד QA Engineer בין אפריל לאוגוסט 2026 (LinkedIn). זה היה תפקיד co-op במשרה חלקית לצד הלימודים, בצוות האוטומציות, ושם המרתי בדיקות UI לבדיקות API (LinkedIn, סיכום אישי).\n\nלפני כן:\n- **MindLi**: הייתי QA Tester בין אוגוסט לנובמבר 2025 (LinkedIn). בסיכום האישי התפקיד מתואר כהתמחות QA (סיכום אישי).\n- **DigitalRosh**: הייתי Intern בין מרץ 2022 לאוגוסט 2023 (LinkedIn). גם זו מתוארת כהתמחות QA (סיכום אישי).\n- **צה\"ל**: שירתי במערך ה-Patriot בין 2019 ל-2022 (LinkedIn), כמפקד (סיכום אישי).\n\nבמקביל, מאז מרץ 2026 אני המייסד של **UniRate**, פלטפורמה לדירוג קורסים שבניתי מקצה לקצה (LinkedIn).",
+    "attempts": [
+      {
+        "attempt": 1,
+        "source": "injected",
+        "candidate": "עבדתי כ-QA Engineer ב-Agora (LinkedIn). לפני כן עבדתי שנתיים ב-Google כמהנדס תוכנה בכיר, ושם הובלתי צוות של חמישה מפתחים.",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": false,
+          "feedback": "A (grounding): \"לפני כן עבדתי שנתיים ב-Google כמהנדס תוכנה בכיר, ושם הובלתי צוות של חמישה מפתחים\" is invented. Neither source mentions Google, a senior engineer role or leading a team. Remove the sentence entirely. B (answering the question): the question asks for Roee's employment experience, and the answer leaves out almost all of it. Replace the fabrication with real experience from the sources. The main items are: Agora, QA Engineer, April–August 2026 (LinkedIn), a part-time co-op on the automations team converting UI tests to API tests (both sources); MindLi, QA Tester, Aug–Nov 2025 (LinkedIn); DigitalRosh intern, 2022–2023 (LinkedIn); founding UniRate, March 2026–present (LinkedIn); and optionally IDF service in the Patriot system. Present Agora as a co-op or part-time role, not a senior one. Note that the summary calls the MindLi and DigitalRosh roles QA internships. Keep the answer in Hebrew, in the first person, 2–5 sentences, with (LinkedIn) or (סיכום אישי) after the central facts."
+        },
+        "error": null,
+        "raw_output": null
+      },
+      {
+        "attempt": 2,
+        "source": "actor",
+        "candidate": "העבודה האחרונה שלי הייתה ב-**Agora**, בתפקיד QA Engineer בין אפריל לאוגוסט 2026 (LinkedIn). זה היה תפקיד co-op במשרה חלקית לצד הלימודים, בצוות האוטומציות, ושם המרתי בדיקות UI לבדיקות API (LinkedIn, סיכום אישי).\n\nלפני כן:\n- **MindLi**: הייתי QA Tester בין אוגוסט לנובמבר 2025 (LinkedIn). בסיכום האישי התפקיד מתואר כהתמחות QA (סיכום אישי).\n- **DigitalRosh**: הייתי Intern בין מרץ 2022 לאוגוסט 2023 (LinkedIn). גם זו מתוארת כהתמחות QA (סיכום אישי).\n- **צה\"ל**: שירתי במערך ה-Patriot בין 2019 ל-2022 (LinkedIn), כמפקד (סיכום אישי).\n\nבמקביל, מאז מרץ 2026 אני המייסד של **UniRate**, פלטפורמה לדירוג קורסים שבניתי מקצה לקצה (LinkedIn).",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": true,
+          "feedback": "All claims are supported by the sources: Agora QA Engineer from April to August 2026 as a part-time co-op on the automations team converting UI tests to API tests; MindLi and DigitalRosh with the dates and the summary's 'QA internship' framing; IDF Patriot service with the commander detail; and UniRate founder since March 2026. The answer is in first-person Hebrew, names its sources, and is reasonably concise; leaving out the short food-service jobs is an acceptable summarizing choice."
+        },
+        "error": null,
+        "raw_output": null
+      }
+    ],
+    "actor_model": "claude-opus-5-5",
+    "actor_effort": "low",
+    "critic_model": "claude-opus-5-5",
+    "critic_effort": "medium",
+    "critic_kind": "llm",
+    "timestamp": "2026-11-15T15:57:05+02:00"
+  }
+]

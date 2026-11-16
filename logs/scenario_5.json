@@ -1,0 +1,52 @@
+[
+  {
+    "scenario_id": "scenario_5",
+    "question": "ספר לי על הניסיון שלך ב-QA",
+    "status": "exhausted",
+    "final_text": "לא התקבלה תשובה מאושרת במסגרת מגבלת הניסיונות (3 ניסיונות). אפשר לנסח את השאלה אחרת ולנסות שוב.",
+    "attempts": [
+      {
+        "attempt": 1,
+        "source": "actor",
+        "candidate": "ב-**Agora** עבדתי כ-QA Engineer בין אפריל לאוגוסט 2026 (LinkedIn). זו הייתה משרת co-op חלקית בצוות האוטומציות, שבה המרתי בדיקות UI לבדיקות API (LinkedIn, סיכום אישי).\n\nלפני כן הייתי QA Tester ב-**MindLi** בין אוגוסט לנובמבר 2025 (LinkedIn). עשיתי גם התמחות QA ב-DigitalRosh (סיכום אישי). בפרופיל ה-LinkedIn שלי התפקיד שם מופיע כ-Intern, בין מרץ 2022 לאוגוסט 2023 (LinkedIn).\n\nאין במקורות שלי פירוט נוסף על הכלים או על המשימות בתפקידים האלה. אפשר לפנות אליי ישירות דרך LinkedIn.",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": false,
+          "feedback": "[MOCK CRITIC - control-flow test] This critic rejects every answer on purpose, to test that the loop stops after the maximum number of attempts."
+        },
+        "error": null,
+        "raw_output": null
+      },
+      {
+        "attempt": 2,
+        "source": "actor",
+        "candidate": "ב-**Agora** עבדתי כ-QA Engineer מאפריל עד אוגוסט 2026 (LinkedIn). זו הייתה משרת co-op חלקית בצוות האוטומציות, ושם המרתי בדיקות UI לבדיקות API (LinkedIn, סיכום אישי).\n\nלפני כן עבדתי כ-QA Tester ב-**MindLi** מאוגוסט עד נובמבר 2025 (LinkedIn). עשיתי גם התמחות QA ב-DigitalRosh (סיכום אישי). ב-LinkedIn התפקיד הזה מופיע כ-Intern, ממרץ 2022 עד אוגוסט 2023 (LinkedIn).\n\nהמקורות שעומדים לרשותי לא מפרטים את הכלים או המשימות ב-MindLi וב-DigitalRosh. לפרטים נוספים אפשר לפנות אליי ישירות דרך LinkedIn.",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": false,
+          "feedback": "[MOCK CRITIC - control-flow test] This critic rejects every answer on purpose, to test that the loop stops after the maximum number of attempts."
+        },
+        "error": null,
+        "raw_output": null
+      },
+      {
+        "attempt": 3,
+        "source": "actor",
+        "candidate": "ב-**Agora** עבדתי כ-QA Engineer מאפריל עד אוגוסט 2026 (LinkedIn). זו הייתה משרת co-op חלקית בצוות האוטומציות, ושם המרתי בדיקות UI לבדיקות API (LinkedIn, סיכום אישי).\n\nלפני כן עבדתי ב-**MindLi** מאוגוסט עד נובמבר 2025. ב-LinkedIn התפקיד מופיע כ-QA Tester (LinkedIn), ובסיכום האישי הוא מתואר כהתמחות QA (סיכום אישי). עשיתי גם התמחות QA ב-**DigitalRosh** (סיכום אישי). ב-LinkedIn התפקיד הזה מופיע כ-Intern, ממרץ 2022 עד אוגוסט 2023 (LinkedIn).\n\nהמקורות שעומדים לרשותי לא מפרטים את הכלים או המשימות שלי ב-MindLi וב-DigitalRosh. לפרטים נוספים אפשר לפנות אליי ישירות דרך LinkedIn.",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": false,
+          "feedback": "[MOCK CRITIC - control-flow test] This critic rejects every answer on purpose, to test that the loop stops after the maximum number of attempts."
+        },
+        "error": null,
+        "raw_output": null
+      }
+    ],
+    "actor_model": "claude-opus-5-5",
+    "actor_effort": "low",
+    "critic_model": "fake-reject-critic",
+    "critic_effort": null,
+    "critic_kind": "fake_reject",
+    "timestamp": "2026-11-15T15:57:23+02:00"
+  }
+]

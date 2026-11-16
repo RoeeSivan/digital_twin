@@ -1,0 +1,29 @@
+[project]
+name = "hw1-actor-critic-chat"
+version = "0.1.0"
+description = "Hebrew digital-twin chat with an Actor-Critic review loop (Agentic AI Systems, HW1)"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=2.8.0",
+    "gradio>=6.32.0",
+    "pydantic>=2.14.3",
+    "pypdf>=7.1.0",
+    "python-dotenv>=1.2.4",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.11,<0.12"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "twin"
+module-root = "src"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]  # lets tests import app.py

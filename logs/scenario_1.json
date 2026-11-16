@@ -1,0 +1,40 @@
+[
+  {
+    "scenario_id": "scenario_1",
+    "question": "איפה אתה לומד ומה הפרויקט המרכזי שלך?",
+    "status": "approved",
+    "final_text": "אני לומד לתואר B.Sc. במדעי המחשב ב-**Reichman University** (LinkedIn). הפרויקט המרכזי שלי הוא **UniRate** (uni-rate.com), פלטפורמה לדירוג קורסים לסטודנטים ב-Reichman. בניתי אותה עם Next.js, TypeScript, Prisma ו-PostgreSQL, והיא כוללת עוזר צ'אט מבוסס AI (LinkedIn). לגבי מספר המשתמשים יש פער בין המקורות: לפי LinkedIn יש בה יותר מ-150 משתמשים (LinkedIn), ולפי הסיכום האישי יותר מ-200 (סיכום אישי).",
+    "attempts": [
+      {
+        "attempt": 1,
+        "source": "actor",
+        "candidate": "לומד מדעי המחשב (B.Sc.) ב-**Reichman University** (LinkedIn), וצפוי לסיים בקיץ 2027 (סיכום אישי). הפרויקט המרכזי שלי הוא **UniRate** (uni-rate.com), פלטפורמה לדירוג קורסים לסטודנטים ב-Reichman. בניתי אותה עם Next.js, TypeScript, Prisma ו-PostgreSQL, והיא כוללת עוזר צ'אט מבוסס AI (LinkedIn). לגבי מספר המשתמשים יש פער בין המקורות: לפי LinkedIn יש בה יותר מ-150 משתמשים, ולפי הסיכום האישי יותר מ-200 (סיכום אישי).",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": false,
+          "feedback": "A: \"וצפוי לסיים בקיץ 2027 (סיכום אישי)\" gives one graduation date as the only truth. The sources disagree. The personal summary says summer 2027, but LinkedIn lists the degree as November 2024 – November 2027. Either drop the graduation date, since the question did not ask for it, or state both versions the same way you already did for the user count. Everything else is supported and fine. Reichman B.Sc. in CS, UniRate, its tech stack and AI chat assistant all appear in the sources, and the 150+/200+ conflict is handled correctly. The answer also meets B and D."
+        },
+        "error": null,
+        "raw_output": null
+      },
+      {
+        "attempt": 2,
+        "source": "actor",
+        "candidate": "אני לומד לתואר B.Sc. במדעי המחשב ב-**Reichman University** (LinkedIn). הפרויקט המרכזי שלי הוא **UniRate** (uni-rate.com), פלטפורמה לדירוג קורסים לסטודנטים ב-Reichman. בניתי אותה עם Next.js, TypeScript, Prisma ו-PostgreSQL, והיא כוללת עוזר צ'אט מבוסס AI (LinkedIn). לגבי מספר המשתמשים יש פער בין המקורות: לפי LinkedIn יש בה יותר מ-150 משתמשים (LinkedIn), ולפי הסיכום האישי יותר מ-200 (סיכום אישי).",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": true,
+          "feedback": "Every claim is supported: the B.Sc. in Computer Science at Reichman University, UniRate's tech stack and AI chat assistant all appear in LinkedIn, and the answer openly presents both user counts (150+ in LinkedIn, 200+ in the personal summary) instead of picking one. It answers both parts of the question in brief first-person Hebrew with sources named in parentheses; the bold formatting is only a minor style choice."
+        },
+        "error": null,
+        "raw_output": null
+      }
+    ],
+    "actor_model": "claude-opus-5-5",
+    "actor_effort": "low",
+    "critic_model": "claude-opus-5-5",
+    "critic_effort": "medium",
+    "critic_kind": "llm",
+    "timestamp": "2026-11-15T15:56:27+02:00"
+  }
+]

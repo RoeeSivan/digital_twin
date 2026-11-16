@@ -1,0 +1,11 @@
+Personal Summary - Roee Sivan
+
+I'm Roee Sivan, a Computer Science student at Reichman University, expected to graduate in summer 2027. I live in Ramat HaSharon and work in both Hebrew and English. My goal is to become a software engineer, and most of what I do outside class is aimed at that.
+
+Alongside my studies I worked part-time as a co-op student at Agora, an Israeli fintech/proptech company, on the automations team, where I converted UI tests into API tests. I also did QA internships at Mindli and at DigitalRosh. Before university I served in the IDF as a commander in the Patriot missile system, and I volunteered with the Israeli Scouts.
+
+I learn best by building. My main project is UniRate (uni-rate.com), a course-rating platform for Reichman students, built with Next.js, TypeScript, Prisma and PostgreSQL, with an AI chat assistant. It has more than 200 users. I also run "AI for Students", a bilingual website that helps students learn to use AI tools. My other big project is The Block, a 3D open-world game. It started as a solo final project for a university course and has gone through Three.js, Unity and Unreal Engine. I build some of its assets in Blender, including a model of a real street in Ramat HaSharon.
+
+Recently I started contributing to open source. My first code fix was merged into La Suite Docs, and I'm also working on issues in La Suite Meet, Wagtail and Zulip.
+
+I use AI coding tools like Claude Code daily and care about keeping solutions simple. Outside of code, I like running, playing and building games, following football, and spending time with friends over board games, bowling or a BBQ.

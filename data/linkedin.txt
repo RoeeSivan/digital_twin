@@ -1,0 +1,79 @@
+# LinkedIn profile - Roee Sivan
+# Real profile. Exported from LinkedIn as PDF on 2026-11-14 and converted to text with pypdf.
+# Phone number removed before publishing.
+
+Contact
+roeesivan39@gmail.com
+www.linkedin.com/in/roee-sivan
+(LinkedIn)
+www.uni-rate.com/ (Company)
+Top Skills
+Unreal Engine
+PyTorch
+Reinforcement Learning
+Languages
+Hebrew (Native or Bilingual)
+English (Native or Bilingual)
+Roee Sivan
+Software Engineer | CS student @RUNI
+Tel Aviv-Yafo, Tel Aviv District, Israel
+Summary
+Computer Science Student at Reichman University. I'm a software
+developer focused on shipping full products end to end, not
+just writing code. Core Technical Proficiency: Full-Stack Web
+Development: Built and maintain UniRate (uni-rate.com), a course-
+rating platform for Reichman students with 150+  users, using
+Next.js, TypeScript, Prisma, and PostgreSQL - including a live AI
+chat assistant. Game Development & 3D: Built a 3D game
+in Unity, covering scene design, physics, and gameplay systems.
+System & Application Logic: Solid grounding in Object-
+Oriented Programming with Java and Python for building modular,
+maintainable software, alongside SQL and relational database
+design. Low-Level & Performance: Experience with C for
+memory management and understanding how software behaves
+closer to the hardware. Automation & Testing: Part-time co-op
+at Agora on the automations team, converting UI tests to API tests.
+Experience
+uni-rate
+Founder & Owner
+March 2026 - Present (9 months)
+Israel
+Developed and launched Uni-Rate.com, a course review platform built for
+Reichman University students to share honest reviews and make smarter
+course selections - currently focused on cs and entrepreneurship courses.
+Integrated AI-powered summaries that analyze student reviews and generate
+key insights for each course in both English and Hebrew.
+Built the full stack end-to-end - authentication, LinkedIn verification, email
+notifications, content moderation, and a bilingual interface.
+Currently focused on growing the user base and adding features to help
+students make more informed academic decisions.
+Agora
+QA Engineer
+April 2026 - August 2026 (5 months)
+Tel Aviv District, Israel
+MindLi - Empower AI Thinkers
+QA Tester
+August 2025 - November 2025 (4 months)
+Tel Aviv
+Sweet Tomatoes Pizza
+Food Service Worker
+March 2024 - June 2024 (4 months)
+Newton, Massachusetts, United States
+The Chubby Chickpea
+Food Counter Attendant
+January 2024 - March 2024 (3 months)
+Cambridge, Massachusetts, United States
+DigitalRosh
+Intern
+March 2022 - August 2023 (1 year 6 months)
+Israel
+Israel Defense Forces
+Compulsory service
+August 2019 - March 2022 (2 years 8 months)
+Israel
+Served in the Patriot missile defence system
+Education
+Reichman University
+Bsc, Computer Science · (November 2024 - November 2027)
+Rothberg HIgh school
+Computer Science Chemistry and Arabic

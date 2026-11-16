@@ -1,0 +1,194 @@
+[
+  {
+    "scenario_id": "chat",
+    "question": "איפה אתה לומד ומה הפרויקט המרכזי שלך?",
+    "status": "approved",
+    "final_text": "אני סטודנט למדעי המחשב באוניברסיטת רייכמן (LinkedIn). לפי ה-LinkedIn התואר מתוכנן להסתיים בנובמבר 2027 (LinkedIn), ולפי הסיכום האישי אני צפוי לסיים בקיץ 2027 (סיכום אישי).\n\nהפרויקט המרכזי שלי הוא **UniRate** (uni-rate.com), פלטפורמה לדירוג קורסים לסטודנטים ברייכמן. בניתי אותה עם Next.js, TypeScript, Prisma ו-PostgreSQL, והיא כוללת עוזר צ'אט מבוסס AI (סיכום אישי). לגבי מספר המשתמשים יש פער בין המקורות: ב-LinkedIn מופיעים 150+ משתמשים (LinkedIn), ובסיכום האישי מופיעים יותר מ-200 משתמשים (סיכום אישי).",
+    "attempts": [
+      {
+        "attempt": 1,
+        "source": "actor",
+        "candidate": "אני סטודנט למדעי המחשב באוניברסיטת רייכמן (LinkedIn). לפי ה-LinkedIn התואר מתוכנן להסתיים בנובמבר 2027 (LinkedIn), ולפי הסיכום האישי אני צפוי לסיים בקיץ 2027 (סיכום אישי).\n\nהפרויקט המרכזי שלי הוא **UniRate** (uni-rate.com), פלטפורמה לדירוג קורסים לסטודנטים ברייכמן. בניתי אותה עם Next.js, TypeScript, Prisma ו-PostgreSQL, והיא כוללת עוזר צ'אט מבוסס AI (סיכום אישי). לגבי מספר המשתמשים יש פער בין המקורות: ב-LinkedIn מופיעים 150+ משתמשים (LinkedIn), ובסיכום האישי מופיעים יותר מ-200 משתמשים (סיכום אישי).",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": true,
+          "feedback": "Every claim is supported: Reichman CS studies, UniRate's stack and its AI chat assistant. The answer openly shows both versions where the sources disagree, on graduation (November 2027 vs. summer 2027) and on user count (150+ vs. 200+). It answers both parts of the question in brief first-person Hebrew with sources named."
+        },
+        "error": null,
+        "raw_output": null
+      }
+    ],
+    "actor_model": "claude-opus-5-5",
+    "actor_effort": "low",
+    "critic_model": "claude-opus-5-5",
+    "critic_effort": "medium",
+    "critic_kind": "llm",
+    "timestamp": "2026-11-15T16:04:56+02:00"
+  },
+  {
+    "scenario_id": "chat",
+    "question": "מה הפרויקט המרכזי שלך?",
+    "status": "approved",
+    "final_text": "הפרויקט המרכזי שלי הוא **UniRate** (uni-rate.com), פלטפורמה לדירוג קורסים לסטודנטים ברייכמן (סיכום אישי). בניתי אותה מקצה לקצה עם Next.js, TypeScript, Prisma ו-PostgreSQL, כולל עוזר צ'אט מבוסס AI (LinkedIn). באתר יש אימות משתמשים, אימות דרך LinkedIn, התראות במייל, ניהול תוכן וממשק דו-לשוני, וגם סיכומים מבוססי AI שמנתחים את הביקורות על כל קורס באנגלית ובעברית (LinkedIn). לפי הפרופיל ב-LinkedIn יש לפלטפורמה יותר מ-150 משתמשים (LinkedIn), ולפי הסיכום האישי יותר מ-200 (סיכום אישי).",
+    "attempts": [
+      {
+        "attempt": 1,
+        "source": "actor",
+        "candidate": "הפרויקט המרכזי שלי הוא **UniRate** (uni-rate.com), פלטפורמה לדירוג קורסים לסטודנטים ברייכמן (סיכום אישי). בניתי אותה מקצה לקצה עם Next.js, TypeScript, Prisma ו-PostgreSQL, כולל עוזר צ'אט מבוסס AI (LinkedIn). באתר יש אימות משתמשים, אימות דרך LinkedIn, התראות במייל, ניהול תוכן וממשק דו-לשוני, וגם סיכומים מבוססי AI שמנתחים את הביקורות על כל קורס באנגלית ובעברית (LinkedIn). לפי הפרופיל ב-LinkedIn יש לפלטפורמה יותר מ-150 משתמשים (LinkedIn), ולפי הסיכום האישי יותר מ-200 (סיכום אישי).",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": true,
+          "feedback": "Every claim is supported by the sources: the personal summary names UniRate as Roee's main project, and LinkedIn lists the stack, the AI chat assistant, the features and the bilingual AI summaries. The answer also shows both user counts (150+ on LinkedIn, 200+ in the personal summary) instead of hiding one, and it is in brief, first-person Hebrew with each central fact attributed to its source."
+        },
+        "error": null,
+        "raw_output": null
+      }
+    ],
+    "actor_model": "claude-opus-5-5",
+    "actor_effort": "low",
+    "critic_model": "claude-opus-5-5",
+    "critic_effort": "medium",
+    "critic_kind": "llm",
+    "timestamp": "2026-11-15T16:05:09+02:00"
+  },
+  {
+    "scenario_id": "chat",
+    "question": "ובאיזה טכנולוגיות הוא בנוי?",
+    "status": "approved",
+    "final_text": "UniRate בנוי עם **Next.js** ו-**TypeScript**, עם **Prisma** לעבודה מול מסד הנתונים **PostgreSQL** (LinkedIn) (סיכום אישי). בנוסף שילבתי בו עוזר צ'אט מבוסס AI (סיכום אישי), וגם סיכומים מבוססי AI שמנתחים את הביקורות על כל קורס (LinkedIn). המקורות שזמינים לי לא מפרטים איזה מודל או שירות AI אני משתמש בו.",
+    "attempts": [
+      {
+        "attempt": 1,
+        "source": "actor",
+        "candidate": "UniRate בנוי עם **Next.js** ו-**TypeScript**, עם **Prisma** לעבודה מול מסד הנתונים **PostgreSQL** (LinkedIn) (סיכום אישי). בנוסף שילבתי בו עוזר צ'אט מבוסס AI (סיכום אישי), וגם סיכומים מבוססי AI שמנתחים את הביקורות על כל קורס (LinkedIn). המקורות שזמינים לי לא מפרטים איזה מודל או שירות AI אני משתמש בו.",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": true,
+          "feedback": "The answer resolves the follow-up as being about UniRate and lists exactly the technologies both sources name (Next.js, TypeScript, Prisma, PostgreSQL), plus the AI chat assistant and the AI review summaries, with correct citations. It also states plainly that the sources do not say which AI model or service is used. It is in Hebrew, in the first person, and brief."
+        },
+        "error": null,
+        "raw_output": null
+      }
+    ],
+    "actor_model": "claude-opus-5-5",
+    "actor_effort": "low",
+    "critic_model": "claude-opus-5-5",
+    "critic_effort": "medium",
+    "critic_kind": "llm",
+    "timestamp": "2026-11-15T16:05:18+02:00"
+  },
+  {
+    "scenario_id": "chat",
+    "question": "מה הציון הממוצע שלך בתואר?",
+    "status": "approved",
+    "final_text": "אין לי מידע על הציון הממוצע שלי בתואר במקורות שזמינים לי. אני יכול לומר שאני לומד לתואר B.Sc. במדעי המחשב באוניברסיטת רייכמן, בין נובמבר 2024 לנובמבר 2027 (LinkedIn). לפי הסיכום האישי, סיום התואר צפוי בקיץ 2027 (סיכום אישי). אם הממוצע חשוב לך, אפשר לפנות אליי ישירות דרך LinkedIn.",
+    "attempts": [
+      {
+        "attempt": 1,
+        "source": "actor",
+        "candidate": "אין לי מידע על הציון הממוצע שלי בתואר במקורות שזמינים לי. אני יכול לומר שאני לומד לתואר B.Sc. במדעי המחשב באוניברסיטת רייכמן, בין נובמבר 2024 לנובמבר 2027 (LinkedIn). לפי הסיכום האישי, סיום התואר צפוי בקיץ 2027 (סיכום אישי). אם הממוצע חשוב לך, אפשר לפנות אליי ישירות דרך LinkedIn.",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": true,
+          "feedback": "The answer correctly says the GPA is not in the sources and does not guess. The extra details are grounded: the B.Sc. at Reichman from November 2024 to November 2027 comes from LinkedIn, and the summer 2027 graduation comes from the personal summary. Both versions of the end date are shown with their sources, and the answer is brief, in Hebrew and in the first person."
+        },
+        "error": null,
+        "raw_output": null
+      }
+    ],
+    "actor_model": "claude-opus-5-5",
+    "actor_effort": "low",
+    "critic_model": "claude-opus-5-5",
+    "critic_effort": "medium",
+    "critic_kind": "llm",
+    "timestamp": "2026-11-15T16:05:54+02:00"
+  },
+  {
+    "scenario_id": "chat-injected-draft",
+    "question": "ספר לי על הניסיון התעסוקתי שלך",
+    "status": "approved",
+    "final_text": "רוב הניסיון שלי הוא בתחום ה-QA והאוטומציה, לצד מוצר שבניתי בעצמי:\n\n- **Agora**: עבדתי כ-QA Engineer בין אפריל לאוגוסט 2026 (LinkedIn). זו הייתה משרת סטודנט במשרה חלקית בצוות האוטומציות, שבה המרתי בדיקות UI לבדיקות API (סיכום אישי).\n- **UniRate**: אני Founder & Owner מאז מרץ 2026. בניתי את הפלטפורמה מקצה לקצה, כולל אימות משתמשים, אימות LinkedIn, התראות במייל, ניהול תוכן וממשק דו-לשוני (LinkedIn).\n- **MindLi**: עבדתי כ-QA Tester בין אוגוסט לנובמבר 2025 (LinkedIn).\n- **DigitalRosh**: הייתי Intern בין מרץ 2022 לאוגוסט 2023 (LinkedIn), בהתמחות QA (סיכום אישי).\n\nקודם לכן שירתתי בצה\"ל במערך הפטריוט (LinkedIn), כמפקד (סיכום אישי). ב-2024 עבדתי גם בשירות מזון במסצ'וסטס, ב-The Chubby Chickpea וב-Sweet Tomatoes Pizza (LinkedIn).",
+    "attempts": [
+      {
+        "attempt": 1,
+        "source": "injected",
+        "candidate": "עבדתי כ-QA Engineer ב-Agora (LinkedIn). לפני כן עבדתי שנתיים ב-Google כמהנדס תוכנה בכיר, ושם הובלתי צוות של חמישה מפתחים.",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": false,
+          "feedback": "A (grounding): \"לפני כן עבדתי שנתיים ב-Google כמהנדס תוכנה בכיר, ושם הובלתי צוות של חמישה מפתחים\" is fabricated. Neither source mentions Google, a senior software engineer role, or leading a team. Remove this sentence entirely. B (answering the question): The question asks about Roee's work experience, and the answer leaves out most of what the sources list. Add the real experience: QA Engineer at Agora, April–August 2026, described in the personal summary as a part-time co-op on the automations team converting UI tests to API tests (LinkedIn, סיכום אישי). Founder & Owner of UniRate since March 2026 (LinkedIn). QA Tester at MindLi, August–November 2025 (LinkedIn). Intern at DigitalRosh, March 2022–August 2023 (LinkedIn). You may briefly mention IDF service in the Patriot system (LinkedIn) and the food-service jobs in Massachusetts in 2024 (LinkedIn). Keep the answer in Hebrew, first person, about 2–5 sentences, with a source in parentheses for each central fact."
+        },
+        "error": null,
+        "raw_output": null
+      },
+      {
+        "attempt": 2,
+        "source": "actor",
+        "candidate": "רוב הניסיון שלי הוא בתחום ה-QA והאוטומציה, לצד מוצר שבניתי בעצמי:\n\n- **Agora**: עבדתי כ-QA Engineer בין אפריל לאוגוסט 2026 (LinkedIn). זו הייתה משרת סטודנט במשרה חלקית בצוות האוטומציות, שבה המרתי בדיקות UI לבדיקות API (סיכום אישי).\n- **UniRate**: אני Founder & Owner מאז מרץ 2026. בניתי את הפלטפורמה מקצה לקצה, כולל אימות משתמשים, אימות LinkedIn, התראות במייל, ניהול תוכן וממשק דו-לשוני (LinkedIn).\n- **MindLi**: עבדתי כ-QA Tester בין אוגוסט לנובמבר 2025 (LinkedIn).\n- **DigitalRosh**: הייתי Intern בין מרץ 2022 לאוגוסט 2023 (LinkedIn), בהתמחות QA (סיכום אישי).\n\nקודם לכן שירתתי בצה\"ל במערך הפטריוט (LinkedIn), כמפקד (סיכום אישי). ב-2024 עבדתי גם בשירות מזון במסצ'וסטס, ב-The Chubby Chickpea וב-Sweet Tomatoes Pizza (LinkedIn).",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": true,
+          "feedback": "Every claim is supported by the sources, including the Agora, UniRate, MindLi and DigitalRosh roles and dates, the Patriot service as a commander, and the 2024 food-service jobs. The answer covers the full work history in Hebrew and the first person, with sources cited. It runs a little long, but that is reasonable for such a broad question."
+        },
+        "error": null,
+        "raw_output": null
+      }
+    ],
+    "actor_model": "claude-opus-5-5",
+    "actor_effort": "low",
+    "critic_model": "claude-opus-5-5",
+    "critic_effort": "medium",
+    "critic_kind": "llm",
+    "timestamp": "2026-11-15T16:06:16+02:00"
+  },
+  {
+    "scenario_id": "chat-fake-critic",
+    "question": "ספר לי על הניסיון שלך ב-QA",
+    "status": "exhausted",
+    "final_text": "לא התקבלה תשובה מאושרת במסגרת מגבלת הניסיונות (3 ניסיונות). אפשר לנסח את השאלה אחרת ולנסות שוב.",
+    "attempts": [
+      {
+        "attempt": 1,
+        "source": "actor",
+        "candidate": "ב-**Agora** עבדתי כ-QA Engineer בין אפריל לאוגוסט 2026 (LinkedIn). זה היה תפקיד co-op במשרה חלקית בצוות האוטומציות, שבו המרתי בדיקות UI לבדיקות API (סיכום אישי).\n\nלפני כן עבדתי כ-QA Tester ב-**MindLi** בין אוגוסט לנובמבר 2025 (LinkedIn). עשיתי גם התמחות QA ב-DigitalRosh (סיכום אישי), שבה הייתי מתמחה בין מרץ 2022 לאוגוסט 2023 (LinkedIn).",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": false,
+          "feedback": "[MOCK CRITIC - control-flow test] This critic rejects every answer on purpose, to test that the loop stops after the maximum number of attempts."
+        },
+        "error": null,
+        "raw_output": null
+      },
+      {
+        "attempt": 2,
+        "source": "actor",
+        "candidate": "ב-**Agora** עבדתי כ-QA Engineer בין אפריל לאוגוסט 2026 (LinkedIn). זה היה תפקיד co-op במשרה חלקית בצוות האוטומציות, ושם המרתי בדיקות UI לבדיקות API (סיכום אישי).\n\nלפני כן עבדתי כ-QA Tester ב-**MindLi** בין אוגוסט לנובמבר 2025 (LinkedIn). עשיתי גם התמחות QA ב-DigitalRosh (סיכום אישי), שבה הייתי Intern בין מרץ 2022 לאוגוסט 2023 (LinkedIn).",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": false,
+          "feedback": "[MOCK CRITIC - control-flow test] This critic rejects every answer on purpose, to test that the loop stops after the maximum number of attempts."
+        },
+        "error": null,
+        "raw_output": null
+      },
+      {
+        "attempt": 3,
+        "source": "actor",
+        "candidate": "ב-**Agora** עבדתי כ-QA Engineer בין אפריל לאוגוסט 2026 (LinkedIn). זה היה תפקיד co-op במשרה חלקית בצוות האוטומציות, ושם המרתי בדיקות UI לבדיקות API (סיכום אישי).\n\nלפני כן עבדתי כ-QA Tester ב-**MindLi** בין אוגוסט לנובמבר 2025 (LinkedIn), במסגרת התמחות QA (סיכום אישי). עשיתי גם התמחות QA ב-**DigitalRosh** (סיכום אישי), שבה הייתי Intern בין מרץ 2022 לאוגוסט 2023 (LinkedIn).",
+        "evaluation_completed": true,
+        "evaluation": {
+          "is_acceptable": false,
+          "feedback": "[MOCK CRITIC - control-flow test] This critic rejects every answer on purpose, to test that the loop stops after the maximum number of attempts."
+        },
+        "error": null,
+        "raw_output": null
+      }
+    ],
+    "actor_model": "claude-opus-5-5",
+    "actor_effort": "low",
+    "critic_model": "fake-reject-critic",
+    "critic_effort": null,
+    "critic_kind": "fake_reject",
+    "timestamp": "2026-11-15T16:06:58+02:00"
+  }
+]

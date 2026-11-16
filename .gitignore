@@ -1,0 +1,39 @@
+# secrets: never commit real keys (.env.example is the template)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# python / uv
+# .venv is a symlink to .venv.nosync (kept out of iCloud sync), so both forms are listed
+.venv
+.venv/
+.venv.nosync/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# per-run chat logs (logs/session_<timestamp>.json); the documented logs stay tracked
+logs/session_2*.json
+
+# gradio runtime
+.gradio/
+flagged/
+
+# editors / agents
+.vscode/
+.idea/
+.claude/
+.playwright-mcp/
+
+# os
+.DS_Store
+Thumbs.db

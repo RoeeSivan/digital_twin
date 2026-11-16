@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520 910" width="1520" height="910" font-family="'Arial Hebrew', 'Helvetica Neue', Arial, sans-serif" direction="rtl">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#15803d"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b45309"/>
+    </marker>
+    <marker id="arrow-err" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b91c1c"/>
+    </marker>
+    <style>
+      .title { font-size: 25px; font-weight: 700; fill: #0f172a; }
+      .subtitle { font-size: 14px; fill: #64748b; }
+      .name { font-size: 19px; font-weight: 700; fill: #0f172a; }
+      .sub { font-size: 14px; fill: #334155; }
+      .mono { font-size: 13px; fill: #475569; font-family: Menlo, 'SF Mono', monospace; }
+      .lbl { font-size: 14px; fill: #334155; paint-order: stroke; stroke: #ffffff; stroke-width: 5px; stroke-linejoin: round; }
+      .lbl-in { font-size: 14px; fill: #334155; paint-order: stroke; stroke: #f7f8fb; stroke-width: 5px; stroke-linejoin: round; }
+      .edge { fill: none; stroke: #475569; stroke-width: 1.8; }
+      .badge { font-size: 14px; font-weight: 700; fill: #ffffff; }
+      text { text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect width="1520" height="910" fill="#ffffff"/>
+
+  <text class="title" x="760" y="42">ארכיטקטורת המערכת: יוצר, מעריך ולולאת תיקון</text>
+  <text class="subtitle" x="760" y="68" direction="ltr">Actor-Critic loop · claude-opus-5-5 · Gradio + Pydantic</text>
+
+  <!-- loop container -->
+  <rect x="370" y="222" width="770" height="640" rx="18" fill="#f7f8fb" stroke="#b6bfce" stroke-width="1.6" stroke-dasharray="7 6"/>
+  <text x="612" y="806" font-size="17" font-weight="700" fill="#475569">לולאת יצירה, הערכה ותיקון</text>
+  <text x="612" y="830" font-size="13.5" fill="#64748b">לכל היותר 3 ניסיונות לשאלה · המונה מתאפס בכל שאלה חדשה</text>
+
+  <!-- edges: inputs -->
+  <path class="edge" d="M700,176 V250 H535 V290" marker-end="url(#arrow)"/>
+  <path class="edge" d="M820,176 V250 H975 V290" marker-end="url(#arrow)"/>
+  <path class="edge" d="M280,350 H410" marker-end="url(#arrow)"/>
+  <text class="lbl" x="343" y="337">שאלה + היסטוריה</text>
+
+  <!-- edges: inside the loop -->
+  <path class="edge" d="M660,350 H850" marker-end="url(#arrow)"/>
+  <text class="lbl-in" x="755" y="338">תשובה מועמדת</text>
+  <text class="lbl-in" x="755" y="372" font-size="12.5">(עם השאלה וההיסטוריה)</text>
+  <path class="edge" d="M975,410 V490" marker-end="url(#arrow)"/>
+  <text class="lbl-in" x="1030" y="455">פלט JSON</text>
+  <path class="edge" d="M975,574 V654" marker-end="url(#arrow)"/>
+  <text class="lbl-in" x="1010" y="619">תקין</text>
+
+  <!-- feedback arc -->
+  <path d="M850,696 H535 V410" fill="none" stroke="#dc2626" stroke-width="4" stroke-linejoin="round" marker-end="url(#arrow-red)"/>
+  <text x="692" y="680" font-size="17" font-weight="700" fill="#dc2626">קשת המשוב: דחייה + תיקון</text>
+  <text x="692" y="722" font-size="13.5" fill="#b91c1c">הטיוטה שנדחתה והמשוב חוזרים ליוצר</text>
+  <text x="692" y="742" font-size="12.5" fill="#b91c1c">(כשהתוצאה false ונותרו ניסיונות)</text>
+
+  <!-- edges: exits -->
+  <path d="M1100,696 H1220" fill="none" stroke="#15803d" stroke-width="2.4" marker-end="url(#arrow-green)"/>
+  <text class="lbl" x="1160" y="684" direction="ltr" fill="#15803d" font-weight="700">true</text>
+  <path d="M975,738 V830 H1220" fill="none" stroke="#b45309" stroke-width="2.4" marker-end="url(#arrow-amber)"/>
+  <text class="lbl" x="1090" y="818" fill="#b45309">דחייה בניסיון השלישי</text>
+  <path d="M1100,532 H1220" fill="none" stroke="#b91c1c" stroke-width="2.4" marker-end="url(#arrow-err)"/>
+  <text class="lbl" x="1160" y="520" fill="#b91c1c">לא תקין</text>
+  <path d="M1100,330 H1355 V482" fill="none" stroke="#b91c1c" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#arrow-err)"/>
+  <text class="lbl" x="1250" y="317" fill="#b91c1c">כשל בקריאה למודל</text>
+  <text class="lbl" x="1250" y="352" font-size="12.5" fill="#b91c1c">(יוצר או מעריך)</text>
+
+  <!-- edge: audit log -->
+  <path d="M370,700 H280" fill="none" stroke="#475569" stroke-width="1.8" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
+  <text class="lbl" x="326" y="688">כל ניסיון</text>
+
+  <!-- sources -->
+  <rect x="635" y="92" width="250" height="84" rx="12" fill="#e6f6f4" stroke="#0f766e" stroke-width="2"/>
+  <text class="name" x="760" y="127">מקורות רקע</text>
+  <text class="mono" x="760" y="153" direction="ltr">linkedin.txt · summary.txt</text>
+
+  <!-- chat UI -->
+  <rect x="30" y="290" width="250" height="120" rx="12" fill="#eef2f7" stroke="#475569" stroke-width="2"/>
+  <text class="name" x="155" y="328">ממשק הצ'אט · Gradio</text>
+  <text class="sub" x="155" y="356">שיחה בעברית</text>
+  <text class="sub" x="155" y="380">היסטוריה: שאלות ותשובות סופיות</text>
+
+  <!-- actor -->
+  <rect x="410" y="290" width="250" height="120" rx="12" fill="#e8f0fe" stroke="#1d4ed8" stroke-width="2.4"/>
+  <text class="name" x="535" y="328">היוצר · Actor</text>
+  <text class="sub" x="535" y="356" direction="ltr">Opus 5.5 · effort low</text>
+  <text class="mono" x="535" y="382" direction="ltr">prompts/actor_system.md</text>
+  <circle cx="410" cy="290" r="14" fill="#1d4ed8"/><text class="badge" x="410" y="295">1</text>
+
+  <!-- critic -->
+  <rect x="850" y="290" width="250" height="120" rx="12" fill="#f3e8ff" stroke="#7e22ce" stroke-width="2.4"/>
+  <text class="name" x="975" y="328">המעריך · Critic</text>
+  <text class="sub" x="975" y="356" direction="ltr">Opus 5.5 · effort medium</text>
+  <text class="mono" x="975" y="382" direction="ltr">prompts/critic_system.md</text>
+  <circle cx="850" cy="290" r="14" fill="#7e22ce"/><text class="badge" x="850" y="295">2</text>
+
+  <!-- validation -->
+  <rect x="850" y="490" width="250" height="84" rx="42" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <text class="name" x="975" y="527" font-size="17">אימות Pydantic</text>
+  <text class="sub" x="975" y="551">האם ה-Evaluation תקין?</text>
+  <circle cx="868" cy="500" r="14" fill="#475569"/><text class="badge" x="868" y="505">3</text>
+
+  <!-- decision -->
+  <rect x="850" y="654" width="250" height="84" rx="42" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <text x="975" y="692" direction="ltr" font-size="17" font-weight="700" fill="#0f172a" font-family="Menlo, 'SF Mono', monospace">is_acceptable?</text>
+  <text class="sub" x="975" y="716" font-size="13">החלטה לפי השדה הבוליאני בלבד</text>
+  <circle cx="868" cy="664" r="14" fill="#475569"/><text class="badge" x="868" y="669">4</text>
+
+  <!-- exits -->
+  <rect x="1220" y="482" width="270" height="100" rx="12" fill="#fee2e2" stroke="#b91c1c" stroke-width="2.4"/>
+  <text class="name" x="1355" y="516">שגיאה טכנית</text>
+  <text class="sub" x="1355" y="542">הודעת שגיאה בצ'אט</text>
+  <text class="sub" x="1355" y="564">ההערכה לא הושלמה</text>
+
+  <rect x="1220" y="646" width="270" height="100" rx="12" fill="#e7f6ec" stroke="#15803d" stroke-width="2.4"/>
+  <text class="name" x="1355" y="680">אישור</text>
+  <text class="sub" x="1355" y="706">התשובה מוצגת בצ'אט</text>
+  <text class="sub" x="1355" y="728">ונוספת להיסטוריה</text>
+
+  <rect x="1220" y="780" width="270" height="100" rx="12" fill="#fef3c7" stroke="#b45309" stroke-width="2.4"/>
+  <text class="name" x="1355" y="814">מיצוי ניסיונות</text>
+  <text class="sub" x="1355" y="840">הודעת עצירה בצ'אט</text>
+  <text class="sub" x="1355" y="862">אף טיוטה שנדחתה לא מוצגת</text>
+
+  <!-- audit log -->
+  <rect x="30" y="640" width="250" height="120" rx="12" fill="#f1f5f9" stroke="#475569" stroke-width="2" stroke-dasharray="6 4"/>
+  <text class="name" x="155" y="678">יומן בדיקה</text>
+  <text class="sub" x="155" y="706">טיוטה, החלטה, משוב, שגיאה</text>
+  <text class="mono" x="155" y="732" direction="ltr">logs/*.json</text>
+</svg>
