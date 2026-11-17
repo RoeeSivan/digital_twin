@@ -62,7 +62,7 @@ scripts/     smoke_test.py, run_scenarios.py
 tests/       pytest
 logs/        audit logs (JSON); the chat's own per-run session_<timestamp>.json files are git-ignored
 results/     scenarios.md, screenshots/
-report/      REPORT.md/.pdf, architecture diagram
+report/      REPORT.md/.docx/.pdf (short report + results), architecture diagram
 ```
 
 ## Results
