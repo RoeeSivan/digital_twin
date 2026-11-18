@@ -62,6 +62,9 @@ def create_message(
         raise TechnicalError(f"API error {e.status_code} ({type(e).__name__}): {e.message}") from e
     except anthropic.APIConnectionError as e:
         raise TechnicalError(f"Network error ({type(e).__name__}): {e}") from e
+    except (anthropic.AnthropicError, TypeError) as e:
+        # e.g. a missing API key: the SDK raises TypeError before any request is sent.
+        raise TechnicalError(f"Model call failed ({type(e).__name__}): {e}") from e
 
 
 def text_of(response: Message) -> str:
